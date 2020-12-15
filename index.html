@@ -60,7 +60,7 @@
             <nav class="tabNav">
                 <ul>
                     <li v-bind:class="{ 'curr': currentNav == 0 }" @click="currentNav = 0">Pagina</li>
-                    <li v-bind:class="{ 'curr': currentNav == 1 }" @click="currentNav = 1">Paginas</li>
+                    <li v-bind:class="{ 'curr': currentNav == 1 }" @click="currentNav = 1">Bookmark</li>
                 </ul>
 
                 <div class="clear"></div>
@@ -76,7 +76,7 @@
 
             <section v-show="currentNav == 1">
                 <ul class="page-menu">
-                    <li v-for="page in pageNum" v-bind:class="{ 'curr': currentPage == page }" @click="changePage(page)"><i class="icon-turned_in_not"></i> Paginas {{ page }}</li>
+                    <li v-for="page in pageNum" v-bind:class="{ 'curr': currentPage == page }" @click="changePage(page)"><i class="icon-turned_in_not"></i> Bookmark {{ page }}</li>
                 </ul>
             </section>
         </div>
