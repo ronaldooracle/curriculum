@@ -27,7 +27,7 @@
                 <i class="icon-play_arrow" v-bind:class="{'disabled': currentPage == pageNum}" @click="changeCurrentPage('next')"></i>
                 <i class="icon-skip_next" v-bind:class="{'disabled': currentPage == pageNum}" @click="changeCurrentPage('last')"></i>
                 <select v-model="currentPage">
-                    <option v-for="page in pageNum" v-bind:value="page">page {{ page }}</option>
+                    <option v-for="page in pageNum" v-bind:value="page">Pagina {{ page }}</option>
                 </select>
                 <i class="icon-zoom_in" v-bind:class="{'disabled': zoomNum == 2}" @click="modifyZoom('in')"></i>
                 <select v-model="zoomNum">
